@@ -1,0 +1,67 @@
+img {
+  height: 50%;
+  width: 80%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+/* .CardsContainer {
+  width: 15rem;
+  height: 25rem;
+} */
+.card {
+  width: 350px;
+  height: 450px;
+  padding: 5%;
+  background: rgba(14, 3, 25, 0.700);
+  border-bottom: 2px solid blueviolet;
+  border-right: 2px solid blueviolet;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  transition-duration: 1s;
+  transition-property: border-top, border-left, border-bottom, border-right,
+    box-shadow;
+  border-radius: 15px;
+  margin: 3em;
+}
+
+.card:hover {
+  border-top: 2px solid blueviolet;
+  border-left: 2px solid blueviolet;
+  border-bottom: 2px solid rgb(238, 103, 238);
+  border-right: 2px solid rgb(238, 103, 238);
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.card__content {
+  font-size: small;
+  text-align: center;
+  font-size: 15px;
+  font-weight:500;
+  text-transform: capitalize;
+}
+
+.card__content-heading {
+  color: blueviolet;
+}
+
+.card__content-body p {
+  color: rgb(214, 182, 237);
+  padding-bottom: 1rem;
+  
+}
+
+li, p, H1, h2, ul, p {
+  list-style: none;
+  line-height: 1.5;
+  color: rgb(252, 239, 255);
+  text-decoration: none
+}
+.h1Card{
+  background-color: rgba(197, 7, 255, 0.04);
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,0 +1,58 @@
+.navContainer{
+  padding: 0.5em 1% 0.5em 1%;
+  background-color: rgba(0, 0, 0, 0.800);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 3%;
+  margin-bottom: 4%;
+  box-shadow: 2px 2px 4px 0.7px rgb(100 61 136);
+}
+.btnCreateNav{
+  --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgba(191, 123, 255, 0);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(100, 61, 136);
+  border: .25em solid var(--glow-color);
+  padding: .5em 5em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 1em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  transition: all 0.3s;
+  position: relative;
+  left: -30%;
+  /* margin-left: -70%; */
+ }
+
+.LogoNav{
+  width: 7%;
+  border-radius: 100px;
+  margin: 8px;
+  --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgba(191, 123, 255, 0);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(100, 61, 136);
+  /* border: 0.25em solid var(--glow-color); */
+  /* padding: 0.5em 2em; */
+  /* color: var(--glow-color); */
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 1em var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+}
+.ContainerSearchNav{
+  position: relative;
+  left: -10%;
+}

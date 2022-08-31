@@ -1,0 +1,276 @@
+.DetailContainer {
+  margin: 1%;
+  background-color: rgba(0, 0, 0, 0.700);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+  overflow-x: hidden;
+  box-shadow: 3px 3px 3px rgb(0, 0, 0);
+  border-color: rgba(0, 0, 0, 0.218);
+}
+
+.DetailCard {
+  width: 35%;
+  height: 35%;
+  padding: 2%;
+  background: rgba(14, 3, 25, 0.700);
+  border-bottom: 2px solid blueviolet;
+  border-right: 2px solid blueviolet;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  transition-duration: 1s;
+  transition-property: border-top, border-left, border-bottom, border-right,
+    box-shadow;
+  border-radius: 15px;
+  margin: 3em;
+  color: rgb(214, 182, 237);
+  padding-bottom: 1rem;
+  display: inline-block;
+}
+
+.DetailCard:hover {
+  border-top: 2px solid blueviolet;
+  border-left: 2px solid blueviolet;
+  border-bottom: 2px solid rgb(238, 103, 238);
+  border-right: 2px solid rgb(238, 103, 238);
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.DetailCard__content {
+  font-size: small;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.DetailCard__content-heading {
+  color: blueviolet;
+}
+
+.btnDetailHome {
+  --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgba(191, 123, 255, 0);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(100, 61, 136);
+  border: 0.25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+  margin: 1em;
+  margin-top: 2em;
+}
+
+.btnDetailCreate {
+  --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgba(191, 123, 255, 0);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(100, 61, 136);
+  border: 0.25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+  margin: 1em;
+  margin-top: 2em;
+}
+
+button::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: 0.7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+button:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+}
+
+button:active {
+  box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 0.5em 0.25em var(--glow-color);
+}
+
+/* From uiverse.io by @Navarog21 */
+.loader {
+  background-color: black;
+  position: relative;
+  width: 2.5em;
+  height: 2.5em;
+  transform-origin: center;
+  transition: 1s;
+  border-radius: 50px;
+  box-shadow: inset 0px 0px 10px purple,
+  inset 5px 5px 12px rgba(44, 0, 114, 0.8),
+  inset 8px 8px 1px rgba(160, 120, 255, 0.7),
+  0px 0px 1px rgba(160, 120, 255, 0.6);
+  animation: 1.2s linear infinite 0s running first682;
+}
+
+.loader div {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+}
+
+#first {
+  transform: rotate(90deg)
+}
+
+#first::before {
+  --width: 1em;
+  --height: 1em;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: calc(50% - var(--width)/2);
+  width: 1em;
+  height: 1em;
+  background-color: rgb(44, 0, 114);
+  box-shadow: inset 5px 5px 10px rgb(160, 120, 255),
+  0px 0px 2px white;
+  border-radius: 50px;
+  animation: 0.8s ease-in 0s infinite running jump2;
+}
+
+#second {
+  transform: rotate(90deg);
+}
+
+#second::before {
+  --width: 1em;
+  --height: 1em;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: calc(50% - var(--width)/2);
+  width: 1em;
+  height: 1em;
+  background-color: rgb(44, 0, 114);
+  box-shadow: inset 5px 5px 10px rgb(160, 120, 255),
+  0px 0px 2px white;
+  border-radius: 50px;
+  animation: 1.5s ease-in 0s infinite running jump2;
+}
+
+#third {
+  transform: rotate(90deg)
+}
+
+#third::before {
+  --width: 1em;
+  --height: 1em;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: calc(50% - var(--width)/2);
+  width: 1em;
+  height: 1em;
+  background-color: rgb(44, 0, 114);
+  box-shadow: inset 5px 5px 10px rgb(160, 120, 255),
+  0px 0px 2px white;
+  border-radius: 50px;
+  animation: 1.6s ease-in 0s infinite running jump2;
+}
+
+.loader::after {
+  --width: 1em;
+  --height: 1em;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: calc(50% - var(--width)/2);
+  width: 1em;
+  height: 1em;
+  background-color: rgb(44, 0, 114);
+  box-shadow: inset 5px 5px 10px rgb(160, 120, 255),
+  0px 0px 2px white;
+  border-radius: 50px;
+  animation: 1.2s ease-in 1s alternate infinite running jump2;
+}
+
+@keyframes first682 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(0deg);
+    transform: rotate(90deg)
+  }
+
+  50% {
+    transform: rotate(90deg);
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(180deg);
+    transform: rotate(270deg)
+  }
+
+  100% {
+    transform: rotate(270deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes jump2 {
+  0% {
+    top: 100%;
+  }
+
+  25% {
+    top: 230%
+  }
+
+  50% {
+    top: 100%;
+  }
+
+  75% {
+    height: 0.6em
+  }
+
+  100% {
+    height: 1em
+  }
+}
