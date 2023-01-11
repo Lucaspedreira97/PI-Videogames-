@@ -2,7 +2,7 @@ img {
   height: 50%;
   width: 80%;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: 3px;
 }
 /* .CardsContainer {
   width: 15rem;
@@ -20,7 +20,7 @@ img {
   transition-duration: 1s;
   transition-property: border-top, border-left, border-bottom, border-right,
     box-shadow;
-  border-radius: 15px;
+  border-radius: 3px;
   margin: 3em;
 }
 

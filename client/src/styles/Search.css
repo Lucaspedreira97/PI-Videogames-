@@ -9,7 +9,7 @@
     font-size: 15px;
     font-weight: bold;
     background-color: var(--btn-color);
-    border-radius: 1em;
+    border-radius: 3px;
     outline: none;
     box-shadow: 0 0 1em .25em var(--glow-color),
            0 0 4em 1em var(--glow-spread-color),
@@ -51,7 +51,7 @@
    .searchInput{
     color: #8707ff;
     border: 2px solid #8707ff;
-    border-radius: 10px;
+    border-radius: 3px;
     padding: 10px 25px;
     background: transparent;
     max-width: 190px;

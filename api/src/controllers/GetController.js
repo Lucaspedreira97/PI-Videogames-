@@ -66,7 +66,7 @@ const getVideogames = async (req, res) => {
             genres: games.genres.map((g) => g.name),
           };
         })
-      //aca pido por name a base de datos
+      //aca pido por name a base de datos por si es un game que fue creado
       let nameDb = await Videogame.findAll({
         where: {
           name: {
@@ -81,7 +81,7 @@ const getVideogames = async (req, res) => {
           },
         },
       });
-      const resDb = nameDb.map((games)=>{
+      const resDb = nameDb.map((games)=>{// esto es un faormateo
         return {
           id: games.id,
           name: games.name,
